@@ -16,19 +16,31 @@ describe('Javabuzz', function() {
 
     });
 
+    it('divisible by 3 and 5', function() {
+      javabuzz = new Javabuzz();
+      expect(javabuzz.isDivisibleByFiveAndThree(15)).toBe(true);
+
+    });
+
   });
 
   describe('knows when a number is NOT', function() {
 
     it('divisible by 3', function() {
       javabuzz = new Javabuzz();
-      expect(javabuzz.isDivisibleByThree(1)).toBe(false)
+      expect(javabuzz.isDivisibleByThree(1)).toBe(false);
 
     });
 
     it('divisible by 5', function() {
       javabuzz = new Javabuzz();
-      expect(javabuzz.isDivisibleByFive(1)).toBe(false)
+      expect(javabuzz.isDivisibleByFive(1)).toBe(false);
+
+    });
+
+    it('divisible by 3 and 5', function() {
+      javabuzz = new Javabuzz();
+      expect(javabuzz.isDivisibleByFiveAndThree(1)).toBe(false);
 
     });
 
